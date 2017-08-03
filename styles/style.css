@@ -1,0 +1,533 @@
+/*{
+	border:1px solid black;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+
+
+/* i'm no sure about that body{
+	background-color:#141414;
+}
+*/
+
+body {
+    margin: 0;
+    background: #171719 url(../photos/grad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*border radius */
+
+section,
+header {
+    border-radius: 20px;
+}
+
+footer {
+    border-radius: 20px 20px 0 0;
+}
+
+#container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 230px;
+    background-color: #171719;
+}
+
+header img {
+    width: 250px;
+    float: left;
+    opacity: 0.7;
+    -webkit-transition: all 2s;
+    /* Safari */
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+header img:hover {
+    opacity: 1;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 100px;
+    margin-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Ruslan Display', cursive;
+    -webkit-transition: border-bottom 2s;
+    /* Safari */
+    -moz-transition: border-bottom 2s;
+    -o-transition: border-bottom 2s;
+    transition: border-bottom 2s;
+    font-family: 'Ruslan Display', cursive;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #918a8a;
+}
+
+#aboutMe {
+    text-align: center;
+    background: rgba(165, 165, 165, 0.4) url(../photos/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#aboutMe h1 {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+#aboutMe p {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#aboutMe img {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 0.8;
+    -webkit-transition: 1s;
+    /* Safari */
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#aboutMe img:hover {
+    opacity: 1;
+}
+
+#certificates{
+    padding-bottom: 30px;
+}
+
+#certificates a{
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    padding:15px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: rgba(155,155,155,0.5);
+    -webkit-transition: background-color 1s;
+   -moz-transition: background-color 1s;
+   -o-transition: background-color 1s;
+   transition: background-color 1s;
+}
+
+#certificates a:hover{
+    background-color: rgba(155,155,155,0.9);
+    color:black;
+}
+
+#skills {
+    text-align: center;
+    color: white;
+    background-image: url('../photos/section2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#skills h2 {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+#skills h3 {
+    font-size: 30px;
+}
+
+#skills img {
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    -webkit-transition: all 2s;
+    /* Safari */
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+#skills img:hover {
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+#projects {
+    color: white;
+    background-image: url('../photos/projects.jpg');
+    background-position: center;
+    background-size: cover;
+    /* just example / change that after i put elements*/
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+
+
+#contacts {
+    color: white;
+    text-align: center;
+    height: 490px;
+    background: rgba(165, 165, 165, 0.4) url(../photos/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts h1 {
+    padding:25px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#contacts label {
+    font-size: 30px;
+    font-style: italic;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"] {
+    border: 2px solid #555555;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    -webkit-transition: background-color 1s;
+    /* Safari */
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #555555;
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #101212;
+    height: 90px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+footer .social-media {
+    text-align: center;
+}
+
+.fa {
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* BUTTON BACK TO TOP */
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(114, 114, 114, 0.8) url(../photos/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+}
+
+
+/* type writer */
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/*------Projects Slideshow *------/
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container div:first-child {
+    display: block;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img{
+    border-radius:15px;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin: 17px auto;
+    text-align: center;
+    font-style: italic;
+    border: 2px solid rgba(155,155,155,0.5);
+    background-color: rgba(155, 155, 155, 0.11);
+    border-radius: 30px;
+
+}
+
+/* Top text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots_div{
+    padding-bottom:10px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/*--- Media Queries ---*/
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 5px;
+    }
+    #container {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    header img {
+        width: 150px;
+        float: none;
+    }
+    nav {
+        margin-bottom: 20px;
+    }
+    nav ul {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    nav ul li a {
+        padding: 0;
+        font-size: 17px;
+    }
+    #aboutMe img {
+        width: 180px;
+    }
+    #aboutMe p {
+        font-size: 19px;
+        font-weight:bold;
+    }
+
+    #aboutMe #certificates{
+        padding:10px;
+    }
+    
+    #aboutMe #certificates a{
+        display:block;
+    }
+    #contacts {
+        height: 100%;
+    }
+    #contacts form {
+        margin-bottom: 20px;
+    }
+}
