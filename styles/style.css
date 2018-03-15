@@ -9,12 +9,15 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 
+<<<<<<< HEAD
 
 /* i'm no sure about that body{
 	background-color:#141414;
 }
 */
 
+=======
+>>>>>>> 17a8660d455f725e32972a3d6c89964b4adf241b
 body {
     margin: 0;
     background: #171719 url(../photos/grad.jpg);
